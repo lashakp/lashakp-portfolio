@@ -150,7 +150,7 @@ export default function PortfolioApp() {
         </a>
 
         <a
-          href="/resume.pdf"
+          href="/My Resume.pdf"
           download
           className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border text-sm"
         >
@@ -184,27 +184,29 @@ export default function PortfolioApp() {
       </div>
     </div>
 
-    <div className="bg-gradient-to-br from-slate-100 to-white p-6 rounded-xl">
-      <div className="h-80 w-full rounded-lg border border-slate-200 overflow-hidden">
-        <iframe
-          src="https://huggingface.co/spaces/lashakp/breast-cancer-recurence-prediction"
-          title="Breast Cancer Prediction Demo"
-          className="w-full h-full rounded-lg"
-          loading="lazy"
-        ></iframe>
-        <noscript>
-          <img
-            src="/demo-screenshot.png"
-            alt="Breast Cancer Prediction Demo Screenshot"
-            className="w-full h-full object-cover rounded-lg"
-          />
-        </noscript>
-      </div>
-      <div className="mt-3 text-center text-slate-600 text-sm">
-        🔮 Try my interactive ML model predicting breast cancer recurrence.
-      </div>
+  <div className="bg-gradient-to-br from-slate-100 to-white p-6 rounded-xl">
+    <div className="rounded-lg border border-slate-200 overflow-hidden shadow-sm">
+      {/* huggingface-preview.png */}
+      <img 
+        src="/huggingface-preview.png" 
+        alt="Breast Cancer Prediction App Preview" 
+        className="w-full object-cover"
+      />
+      {/* Button to open the live demo */}
+      <a
+        href="https://huggingface.co/spaces/lashakp/breast-cancer-recurrence-prediction"
+        target="_blank"
+        rel="noreferrer"
+        className="block text-center px-4 py-2 bg-blue-600 text-white font-medium hover:bg-blue-700"
+      >
+        Try Live Demo
+      </a>
     </div>
-  </section>
+    <div className="mt-3 text-center text-slate-600 text-sm">
+      🔮 Try my interactive ML model predicting breast cancer recurrence.
+    </div>
+  </div>
+</section>
         <section id="projects" className="grid gap-6">
           <h3 className="text-xl font-semibold">Selected Projects</h3>
           <div className="grid md:grid-cols-3 gap-4">
