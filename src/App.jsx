@@ -268,7 +268,7 @@ export default function PortfolioApp() {
 
               <div className="pt-4">
                 <div className="text-sm text-slate-600">Quick CV</div>
-                <a href="/resume.pdf" download className="mt-2 inline-flex items-center gap-2 px-3 py-2 border rounded">
+                <a href="/My Resume.pdf" download className="mt-2 inline-flex items-center gap-2 px-3 py-2 border rounded">
                   <FileText size={14} /> Download resume
                 </a>
               </div>
