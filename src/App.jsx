@@ -148,6 +148,14 @@ export default function PortfolioApp() {
         >
           Contact me
         </a>
+        <a
+  href="/Letter_of_Recommendation_Paul.pdf"
+  download
+  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border text-sm hover:shadow"
+>
+  📄 Download Letter of Recommendation
+</a>
+
 
         <a
           href="/My Resume.pdf"
