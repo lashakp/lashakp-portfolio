@@ -4,69 +4,100 @@ import { Github, Mail, Phone, FileText } from "lucide-react";
 
 export default function PortfolioApp() {
   const user = {
-    name: "Paul Akporarhe",
-    title: "B2B Sales Representative • Growth Ops • Web Scraper",
-    location: "Abuja, Nigeria",
-    email: "akporarhe@gmail.com",
-    phone: "+2348106519628",
-    github: "https://github.com/lashakp",
-    tagline:
-      "I help companies find customers and build data-driven outreach using web scraping, text-to-speech, and sales ops.",
-    about:
-      "I'm a results-driven B2B sales and growth operator with experience building lead pipelines, automating data extraction from government and corporate sites, and producing natural-sounding text-to-speech demos for product experiences. I merge technical tooling (Python web scraping, Streamlit prototypes, TTS integrations) with practical sales systems (CRM workflows, outbound sequences, event-based campaigns).",
-    skills: [
-      "Lead generation & outreach",
-      "Web scraping (BeautifulSoup, requests, Selenium)",
-      "Text-to-Speech (ElevenLabs style integrations)",
-      "Salesforce basics & CRM workflows",
-      "Growth operations & sales enablement",
-      "Streamlit prototypes & dashboards",
-    ],
-    experience: [
-      {
-        company: "Omeife Technology",
-        role: "TTS & Web Scraping Engineer",
-        dates: "2024 — Present",
-        bullets: [
-          "Built end-to-end TTS pipelines and voice demos for client prototypes.",
-          "Designed and deployed scrapers for targeted industry data, normalising outputs for CRM ingestion.",
-          "Produced documentation and reusable utilities to accelerate future scraping projects.",
-        ],
-      },
-      {
-        company: "Workium (Contract)",
-        role: "Sales & Lead Generation",
-        dates: "2025 (remote)",
-        bullets: [
-          "Ran outbound campaigns focused on international career mobility services.",
-          "Coordinated with marketing to build lead lists and nurture sequences.",
-        ],
-      },
-    ],
-    projects: [
-      {
-        title: "Nigerian Government Scraper",
-        description:
-          "A resilient scraper that extracts open data from government portals, normalises records and outputs CSVs ready for CRM import.",
-        tags: ["Python", "BeautifulSoup", "Data pipelines"],
-        link: "#projects",
-      },
-      {
-        title: "Pidgin TTS Demo App",
-        description:
-          "Streamlit prototype that converts conversational text to high-quality audio using TTS provider APIs — used for internal demos and client feedback.",
-        tags: ["Streamlit", "TTS", "ElevenLabs-style"],
-        link: "#projects",
-      },
-      {
-        title: "Sales Outreach Playbook",
-        description:
-          "A repeatable outbound sequence and playbook for B2B corporate gifting and enterprise outreach with metrics tracking.",
-        tags: ["Sales", "Playbook", "CRM"],
-        link: "#projects",
-      },
-    ],
-  };
+  name: "Paul Akporarhe",
+  title: "B2B Sales • Growth Ops • Data Projects",
+  location: "Abuja, Nigeria",
+  email: "akporarhe@gmail.com",
+  phone: "+2348106519628",
+  github: "https://github.com/lashakp",
+  tagline:
+    "I combine B2B sales expertise with data-driven projects — from scraping and CRM pipelines to ML-powered prediction tools.",
+  about:
+    "With a background in sales, field operations, and growth enablement, I’ve helped companies scale outreach, manage client pipelines, and optimize performance. On the technical side, I build scrapers, TTS demos, and machine learning models (like my Breast Cancer Recurrence Predictor on Hugging Face). My focus is blending business impact with technical execution.",
+  skills: [
+    "B2B & B2C Sales Strategy",
+    "Lead generation & outreach",
+    "Growth operations & CRM workflows",
+    "Web scraping (Python, BeautifulSoup, Selenium)",
+    "Machine Learning (Scikit-learn, Gradio, Hugging Face)",
+    "Text-to-Speech prototypes (Streamlit, ElevenLabs APIs)"
+  ],
+  experience: [
+    {
+      company: "Omeife Technology",
+      role: "TTS & Web Scraping Engineer",
+      dates: "2024 — Present",
+      bullets: [
+        "Built TTS pipelines and voice demos for product prototypes.",
+        "Designed scrapers for targeted industry datasets, prepared for CRM ingestion.",
+        "Produced reusable utilities and documentation for scraping projects."
+      ],
+    },
+    {
+      company: "Workium (Contract)",
+      role: "Sales & Lead Generation",
+      dates: "2025 (Remote)",
+      bullets: [
+        "Led outbound campaigns for international career mobility services.",
+        "Built and nurtured lead lists in coordination with marketing."
+      ],
+    },
+    {
+      company: "Upskill Universe — Remote, Freelance",
+      role: "One-on-One Business Mentor",
+      dates: "June 2021 – Present",
+      bullets: [
+        "Delivered tailored mentorship to entrepreneurs and small businesses.",
+        "Implemented digital marketing strategies improving visibility by 60%.",
+        "Trained clients on CRMs, analytics, and project tools.",
+        "Ran sessions virtually using Google Workspace, Zoom, and Trello."
+      ],
+    },
+    {
+      company: "Airtel Nigeria / 3Dim Marketing Ltd",
+      role: "Territory Sales Manager",
+      dates: "Feb 2020 – May 2023",
+      bullets: [
+        "Oversaw B2B/B2C sales operations and managed corporate client accounts.",
+        "Drove outreach through cold calling, lead generation, and direct marketing.",
+        "Led debt recovery and receivables to sustain revenue pipeline.",
+        "Reported insights on client behavior, competitor trends, and opportunities."
+      ],
+    },
+  ],
+  projects: [
+    {
+      title: "Breast Cancer Prediction Model",
+      description:
+        "An ML model to predict breast cancer recurrence. Includes EDA, feature ranking, and an interactive Gradio app deployed on Hugging Face Spaces.",
+      tags: ["Machine Learning", "Gradio", "Hugging Face"],
+      link: "https://huggingface.co/spaces/lashakp/breast-cancer-recurrence-prediction",
+    },
+    {
+      title: "Nigerian Government Scraper",
+      description:
+        "A resilient scraper that extracts open data from government portals, normalizes records, and outputs clean CSVs ready for CRM imports.",
+      tags: ["Python", "BeautifulSoup", "Data pipelines"],
+      link: "#projects",
+    },
+    {
+      title: "Pidgin TTS Demo App",
+      description:
+        "Streamlit prototype that converts conversational text into natural-sounding speech using TTS APIs — tested with local dialects.",
+      tags: ["Streamlit", "TTS", "APIs"],
+      link: "#projects",
+    },
+    {
+      title: "Sales Outreach Playbook",
+      description:
+        "A repeatable outbound sequence and playbook for corporate gifting & enterprise outreach with metrics tracking.",
+      tags: ["Sales", "Playbook", "CRM"],
+      link: "#projects",
+    },
+  ],
+};
+
+
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
@@ -88,81 +119,92 @@ export default function PortfolioApp() {
         </nav>
       </header>
 
-      <main className="max-w-6xl mx-auto px-6 py-8 grid gap-12">
-        <section className="grid md:grid-cols-2 gap-8 items-center bg-white rounded-2xl p-8 shadow-sm">
-          <div>
-            <motion.h2
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.05 }}
-              className="text-3xl font-extrabold leading-tight"
-            >
-              {user.tagline}
-            </motion.h2>
-            <p className="mt-4 text-slate-600">{user.about}</p>
+    <main className="max-w-6xl mx-auto px-6 py-8 grid gap-12">
+<section className="grid md:grid-cols-2 gap-8 items-center bg-white rounded-2xl p-8 shadow-sm">
+    <div>
+      <motion.h2
+        initial={{ opacity: 0, y: 8 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.05 }}
+        className="text-3xl font-extrabold leading-tight"
+      >
+        {user.tagline}
+      </motion.h2>
+      <p className="mt-4 text-slate-600">{user.about}</p>
 
-            <div className="mt-6 flex gap-3">
-              <a
-                href={user.github}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border text-sm hover:shadow"
-              >
-                <Github size={16} /> View GitHub
-              </a>
+      <div className="mt-6 flex gap-3">
+        <a
+          href={user.github}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border text-sm hover:shadow"
+        >
+          <Github size={16} /> View GitHub
+        </a>
 
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-slate-900 text-white text-sm"
-              >
-                Contact me
-              </a>
+        <a
+          href="#contact"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-slate-900 text-white text-sm"
+        >
+          Contact me
+        </a>
 
-              <a
-                href="/resume.pdf"
-                download
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border text-sm"
-              >
-                <FileText size={14} /> Download CV
-              </a>
-            </div>
+        <a
+          href="/resume.pdf"
+          download
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border text-sm"
+        >
+          <FileText size={14} /> Download CV
+        </a>
+      </div>
 
-            <div className="mt-6 flex flex-wrap gap-2">
-              {user.skills.map((s) => (
-                <span key={s} className="text-xs px-2 py-1 bg-slate-100 rounded">{s}</span>
-              ))}
-            </div>
-          </div>
+      <div className="mt-6 flex flex-wrap gap-2">
+        {user.skills.map((s) => (
+          <span key={s} className="text-xs px-2 py-1 bg-slate-100 rounded">{s}</span>
+        ))}
+      </div>
 
-          <div className="bg-gradient-to-br from-slate-100 to-white p-6 rounded-xl">
-            <div className="h-48 w-full rounded-lg border border-dashed border-slate-200 flex items-center justify-center">
-              <div className="text-center text-slate-500">
-                <strong>Project / Demo</strong>
-                <p className="text-xs mt-2">Add an embedded Streamlit demo, audio player, or screenshots here.</p>
-              </div>
-            </div>
+      <div className="mt-4 grid grid-cols-2 gap-2 text-xs text-slate-600">
+        <div>
+          <div className="font-medium">Location</div>
+          <div>{user.location}</div>
+        </div>
+        <div>
+          <div className="font-medium">Availability</div>
+          <div>Immediate</div>
+        </div>
+        <div>
+          <div className="font-medium">Role focus</div>
+          <div>Lead Gen, Sales Ops, Web Scraping, Data Analysis,</div>
+        </div>
+        <div>
+          <div className="font-medium">GitHub</div>
+          <div className="truncate"><a href={user.github} className="text-blue-600">{user.github}</a></div>
+        </div>
+      </div>
+    </div>
 
-            <div className="mt-4 grid grid-cols-2 gap-2 text-xs text-slate-600">
-              <div>
-                <div className="font-medium">Location</div>
-                <div>{user.location}</div>
-              </div>
-              <div>
-                <div className="font-medium">Availability</div>
-                <div>Immediate</div>
-              </div>
-              <div>
-                <div className="font-medium">Role focus</div>
-                <div>Lead Gen, Sales Ops</div>
-              </div>
-              <div>
-                <div className="font-medium">GitHub</div>
-                <div className="truncate"><a href={user.github} className="text-blue-600">{user.github}</a></div>
-              </div>
-            </div>
-          </div>
-        </section>
-
+    <div className="bg-gradient-to-br from-slate-100 to-white p-6 rounded-xl">
+      <div className="h-80 w-full rounded-lg border border-slate-200 overflow-hidden">
+        <iframe
+          src="https://huggingface.co/spaces/lashakp/breast-cancer-recurence-prediction"
+          title="Breast Cancer Prediction Demo"
+          className="w-full h-full rounded-lg"
+          loading="lazy"
+        ></iframe>
+        <noscript>
+          <img
+            src="/demo-screenshot.png"
+            alt="Breast Cancer Prediction Demo Screenshot"
+            className="w-full h-full object-cover rounded-lg"
+          />
+        </noscript>
+      </div>
+      <div className="mt-3 text-center text-slate-600 text-sm">
+        🔮 Try my interactive ML model predicting breast cancer recurrence.
+      </div>
+    </div>
+  </section>
         <section id="projects" className="grid gap-6">
           <h3 className="text-xl font-semibold">Selected Projects</h3>
           <div className="grid md:grid-cols-3 gap-4">
