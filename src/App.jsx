@@ -11,21 +11,23 @@ export default function PortfolioApp() {
   phone: "+2348106519628",
   github: "https://github.com/lashakp",
   tagline:
-    "I combine B2B sales expertise with data-driven projects — from scraping and CRM pipelines to ML-powered prediction tools.",
+    "I combine B2B sales expertise with data-driven projects — from scraping and Structured querying to ML-powered prediction tools and data preprocessing.",
   about:
-    "With a background in sales, field operations, and growth enablement, I’ve helped companies scale outreach, manage client pipelines, and optimize performance. On the technical side, I build scrapers, TTS demos, and machine learning models (like my Breast Cancer Recurrence Predictor on Hugging Face). My focus is blending business impact with technical execution.",
+    "With a background in sales, field operations, and growth enablement, I’ve helped companies scale outreach, manage client pipelines, and optimize performance. On the technical side, I build scrapers, TTS demos, structured querying analytics, and machine learning models (like my Breast Cancer Recurrence Predictor on Hugging Face). My focus is blending business impact with technical execution.",
   skills: [
     "B2B & B2C Sales Strategy",
     "Lead generation & outreach",
     "Growth operations & CRM workflows",
     "Web scraping (Python, BeautifulSoup, Selenium)",
     "Machine Learning (Scikit-learn, Gradio, Hugging Face)",
-    "Text-to-Speech prototypes (Streamlit, ElevenLabs APIs)"
+    "Text-to-Speech prototypes (Streamlit, ElevenLabs APIs)",
+    "Structured querying (SQL, Pandas)"
   ],
+
   experience: [
     {
-      company: "Omeife Technology",
-      role: "TTS & Web Scraping Engineer",
+      company: "Omeife Technology" ,
+      role: "TTS & Web Scraping Engineer Intern",
       dates: "2024 — Present",
       bullets: [
         "Built TTS pipelines and voice demos for product prototypes.",
@@ -33,15 +35,7 @@ export default function PortfolioApp() {
         "Produced reusable utilities and documentation for scraping projects."
       ],
     },
-    {
-      company: "Workium (Contract)",
-      role: "Sales & Lead Generation",
-      dates: "2025 (Remote)",
-      bullets: [
-        "Led outbound campaigns for international career mobility services.",
-        "Built and nurtured lead lists in coordination with marketing."
-      ],
-    },
+    
     {
       company: "Upskill Universe — Remote, Freelance",
       role: "One-on-One Business Mentor",
@@ -60,8 +54,8 @@ export default function PortfolioApp() {
       bullets: [
         "Oversaw B2B/B2C sales operations and managed corporate client accounts.",
         "Drove outreach through cold calling, lead generation, and direct marketing.",
-        "Led debt recovery and receivables to sustain revenue pipeline.",
         "Reported insights on client behavior, competitor trends, and opportunities."
+        
       ],
     },
   ],
@@ -88,11 +82,12 @@ export default function PortfolioApp() {
       link: "#projects",
     },
     {
-      title: "Sales Outreach Playbook",
-      description:
-        "A repeatable outbound sequence and playbook for corporate gifting & enterprise outreach with metrics tracking.",
-      tags: ["Sales", "Playbook", "CRM"],
-      link: "#projects",
+      title: "Employee Data Cleaning and Transformation (SQL)",
+description:
+  "Built a SQL pipeline to clean and standardize messy HR employee records, including trimming names, validating emails, normalizing phone numbers, converting messy salary and hire date formats, and flagging/archiving invalid data. Delivered a cleaned dataset ready for reporting and analytics.",
+tags: ["SQL", "Data Cleaning", "ETL", "Database"],
+link: "#projects",
+
     },
   ],
 };
@@ -301,7 +296,7 @@ export default function PortfolioApp() {
 
         <footer className="text-center py-8 text-slate-500">
           <div>Built by {user.name} — <a href={user.github} className="text-blue-600">View source</a></div>
-          <div className="text-xs mt-2">Made with simple React + Tailwind. Replace placeholders with real demos or deploy to Vercel / Netlify.</div>
+          <div className="text-xs mt-2">Made with simple React + Tailwind. <br /> Deployed on Vercel.</div>
         </footer>
       </main>
     </div>
