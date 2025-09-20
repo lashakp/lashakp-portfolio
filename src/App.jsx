@@ -8,7 +8,7 @@ import cert2 from "./images/cert2.png";
 export default function PortfolioApp() {
   const user = {
     name: "Paul Akporarhe",
-    title: "B2B Sales • Growth Ops • Data Projects",
+    title: "B2B and B2C Sales • Growth Ops • Data Projects",
     location: "Abuja, Nigeria",
     email: "akporarhe@gmail.com",
     phone: "+2348106519628",
@@ -26,7 +26,25 @@ export default function PortfolioApp() {
       "Text-to-Speech prototypes (Streamlit, ElevenLabs APIs)",
       "Structured querying (SQL, Pandas)",
     ],
-    projects: [
+
+    experience: [ 
+
+      { company: "Omeife Technology" , 
+      role: "TTS & Web Scraping Engineer", 
+      dates: "2024 — Present", 
+      bullets: [ "Built TTS pipelines and voice demos for product prototypes.", "Designed scrapers for targeted industry datasets, prepared for CRM ingestion.", "Produced reusable utilities and documentation for scraping projects." ], }, 
+    
+      { company: "Upskill Universe — Remote, Freelance", 
+      role: "One-on-One Business Mentor",
+       dates: "June 2021 – Present", 
+       bullets: [ "Delivered tailored mentorship to entrepreneurs and small businesses.", "Implemented digital marketing strategies improving visibility by 60%.", "Trained clients on CRMs, analytics, and project tools.", "Ran sessions virtually using Google Workspace, Zoom, and Trello." ], }, 
+    
+       { company: "Airtel Nigeria / 3Dim Marketing Ltd", 
+      role: "Territory Sales Manager", 
+      dates: "Feb 2020 – May 2023", 
+      bullets: [ "Oversaw B2B/B2C sales operations and managed corporate client accounts.", "Drove outreach through cold calling, lead generation, and direct marketing.", "Reported insights on client behavior, competitor trends, and opportunities." ], }, ],
+    
+      projects: [
       {
         title: "Breast Cancer Prediction Model",
         description:
@@ -35,10 +53,10 @@ export default function PortfolioApp() {
         link: "https://huggingface.co/spaces/lashakp/breast-cancer-recurrence-prediction",
       },
       {
-        title: "Nigerian Government Scraper",
+        title: "Employee Data Cleaning and Transformation (SQL)",
         description:
-          "A resilient scraper that extracts open data from government portals, normalizes records, and outputs clean CSVs ready for CRM imports.",
-        tags: ["Python", "BeautifulSoup", "Data pipelines"],
+          "Built a SQL pipeline to clean and standardize messy HR employee records, including trimming names, validating emails, normalizing phone numbers, converting messy salary and hire date formats, and flagging/archiving invalid data. Delivered a cleaned dataset ready for reporting and analytics.",
+        tags: ["SQL", "Data Cleaning", "ETL", "Database"],
         link: "#projects",
       },
       {
@@ -48,13 +66,15 @@ export default function PortfolioApp() {
         tags: ["Streamlit", "TTS", "APIs"],
         link: "#projects",
       },
+
       {
-        title: "Employee Data Cleaning and Transformation (SQL)",
+        title: "Nigerian Government Scraper",
         description:
-          "Built a SQL pipeline to clean and standardize messy HR employee records, including trimming names, validating emails, normalizing phone numbers, converting messy salary and hire date formats, and flagging/archiving invalid data. Delivered a cleaned dataset ready for reporting and analytics.",
-        tags: ["SQL", "Data Cleaning", "ETL", "Database"],
+          "A resilient scraper that extracts open data from government portals, normalizes records, and outputs clean CSVs ready for CRM imports.",
+        tags: ["Python", "BeautifulSoup", "Data pipelines"],
         link: "#projects",
       },
+      
     ],
   };
 
@@ -63,6 +83,27 @@ export default function PortfolioApp() {
       <main className="max-w-6xl mx-auto px-6 py-8 grid gap-12">
         
         {/* --- Hero/About Section --- */}
+
+<header className="text-center mt-10">
+          <img
+            src="/profile.jpg"   // <-- place profile.jpg inside public/
+            alt="Profile"
+            className="w-32 h-32 rounded-full mx-auto mb-4 shadow-md"
+          />
+          <h1 className="text-4xl font-bold mb-2">{user.name}</h1>
+          <p className="text-lg text-slate-700 mb-6">{user.title}</p>
+          <motion.h2
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.05 }}
+            className="text-2xl font-extrabold leading-tight"
+          >
+            {user.tagline}
+          </motion.h2>
+          <p className="mt-4 text-slate-600 max-w-2xl mx-auto">{user.about}</p>
+</header>
+
+
         <section className="grid md:grid-cols-2 gap-8 items-center bg-white rounded-2xl p-8 shadow-sm">
           <div>
             <motion.h2
