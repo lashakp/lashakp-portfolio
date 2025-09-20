@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Globe, FileText } from "lucide-react";
-import assessmentImg from "./images/professional-assessment.png";
+import assessmentImg from "./images/assessment.png";
 import cert1 from "./images/cert1.png";
 import cert2 from "./images/cert2.png";
 
